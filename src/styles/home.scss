@@ -1,0 +1,39 @@
+#introduction {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media only screen and (max-width: 768px) {
+    margin-top: 180px;
+  }
+  .home-background {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  h1 {
+    color: #1e5579;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 72px;
+    letter-spacing: 1px;
+    width: 784px;
+  }
+
+  p {
+    color: #1e5579;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    width: 721px;
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0.8;
+  }
+}

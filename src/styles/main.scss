@@ -1,33 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    body {
-        font-family: 'Aileron', 'sans-serif';
+  scroll-behavior: smooth;
+  body {
+    font-family: "Aileron", "sans-serif";
 
-        main {
-            padding: 0 151px;
-            transition: all .2s ease-out;
-
-            .home-background {
-                position: absolute;
-                width: 100%;
-                left: 0;
-                top: 0;
-                z-index: -1;
-            }
-        }
-        ul {
-            list-style: none;
-        }
-        a {
-            text-decoration: none;
-            color: black;
-        }
+    main {
+      padding: 0 151px;
+      transition: all 0.2s ease-out;
+      @media only screen and (max-width: 1100px) {
+        padding: 0 20px;
+      }
     }
+    ul {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
-
