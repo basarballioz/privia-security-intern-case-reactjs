@@ -12,9 +12,11 @@ function Header() {
                 <div className={styles.hamburger}>
                     <GiHamburgerMenu />
                 </div>
+
                 <div className={styles.logo}>
                     <img src="/assets/svg/logo.svg" alt="Privia Logo" />
                 </div>
+
                 <nav>
                     <ul>
                         <li> <Link to='/about'> About </Link> </li>
@@ -25,11 +27,10 @@ function Header() {
                     </ul>
                 </nav>
 
-                <div className="profile-area">
-                    <div className="login">Login</div>
-                    <div className="trial">Start Free Trial</div>
+                <div className={styles['profile-area']}>
+                    <div className={styles.login}>Login</div>
+                    <div className={styles.trial}>Start Free Trial</div>
                 </div>
-
             </header>
         </>
     )

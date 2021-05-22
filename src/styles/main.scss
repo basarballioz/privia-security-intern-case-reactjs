@@ -11,6 +11,15 @@ html {
 
         main {
             padding: 0 151px;
+            transition: all .2s ease-out;
+
+            .home-background {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 0;
+                z-index: -1;
+            }
         }
         ul {
             list-style: none;
