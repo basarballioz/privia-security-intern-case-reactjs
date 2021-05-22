@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Header.module.scss'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 
 function Header() {
@@ -8,6 +9,9 @@ function Header() {
     return (
         <>
             <header>
+                <div className={styles.hamburger}>
+                    <GiHamburgerMenu />
+                </div>
                 <div className={styles.logo}>
                     <img src="/assets/svg/logo.svg" alt="Privia Logo" />
                 </div>
