@@ -1,0 +1,28 @@
+header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+
+  .logo {
+    img {
+      width: 122px;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+          a {
+              display: block;
+              border: 1px solid black;
+              padding: .5rem 1rem;
+          }
+      }
+    }
+  }
+}
