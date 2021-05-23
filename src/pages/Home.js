@@ -165,7 +165,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                {/* <section id='collab'>
+                <section id='collab'>
                     <div className="container">
                         <div className='collab-image'>
                             <img src="/assets/svg/people.svg" alt="Collaborate Image" />
@@ -179,9 +179,33 @@ function Home() {
                                 <h2>Collaborate with your team anytime, anywhere</h2>
                                 <div>Self-service data analytics software that lets you create visually appealing data visualizations and insightful dashboards in minutes.</div>
                             </div>
+                            <div className="collab-checks">
+                                <ul>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Tick Icon" />
+                                        <div>Organize your data</div>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Tick Icon" />
+                                        <div>Work with any team</div>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Tick Icon" />
+                                        <div>Business analytics</div>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Tick Icon" />
+                                        <div>Always in sync</div>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Tick Icon" />
+                                        <div>Embedded analytics</div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </section> */}
+                </section>
             </main>
         </>
     );
