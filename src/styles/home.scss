@@ -202,3 +202,71 @@
     }
   }
 }
+
+#analytics {
+  border: 1px solid black;
+  .container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; //TODO Responsive yapınca center yap
+    .analytics-image {
+      border: 1px solid black;
+    }
+    .analytics-detail {
+      border: 1px solid black;
+      .section-title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.35px;
+        color: #8e8c95;
+      }
+      .title {
+        margin-top: 1.5rem;
+        border: 1px solid black;
+        h2 {
+          width: 530px;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 58px;
+          letter-spacing: 0.8px;
+          border: 1px solid black;
+        }
+        div {
+          width: 410px;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.27px;
+          color: #3b3a40;
+          margin-top: 1rem;
+        }
+      }
+      .props {
+        .prop {
+          margin-top: 1rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          .prop-icon {
+            margin-right: 0.5rem;
+          }
+          .prop-details {
+            div {
+              width: 240px;
+              margin-top: 0.5rem;
+              font-size: 16px;
+              line-height: 26px;
+              letter-spacing: 0.2px;
+              color: #64626a;
+            }
+          }
+        }
+      }
+    }
+  }
+}

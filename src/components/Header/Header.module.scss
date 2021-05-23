@@ -5,6 +5,7 @@ header {
   align-items: center;
   background: #d1e8ff;
   transition: all 0.2s ease-out;
+  z-index: 10;
   @media only screen and (max-width: 860px) {
     justify-content: center;
   }
@@ -16,8 +17,8 @@ header {
     left: 0;
     width: 100%;
     -webkit-box-shadow: 0 8px 6px -6px black;
-       -moz-box-shadow: 0 8px 6px -6px black;
-            box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
   }
 
   @media only screen and (max-width: 500px) {
@@ -60,6 +61,7 @@ header {
     display: flex;
     align-items: center;
     transition: all 0.2s ease-out;
+    z-index: 10;
 
     @media only screen and (max-width: 768px) {
       position: absolute;
@@ -81,7 +83,6 @@ header {
       }
 
       li {
-
         @media only screen and (max-width: 768px) {
           margin: 1rem 0rem;
         }

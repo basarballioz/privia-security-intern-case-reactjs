@@ -69,6 +69,43 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                <section id='analytics'>
+                    <div className='container'>
+                        <div className='analytics-image'>
+                            <img src="/assets/svg/altdashboard.svg" alt="" />
+                        </div>
+                        <div className='analytics-detail'>
+                            <div className='section-title'>
+                                <img src="/assets/svg/tire.svg" alt="Analytics Dash" />
+                                <span>Analytics</span>
+                            </div>
+                            <div className='title'>
+                                <h2>Analyze your data with our analyze tools</h2>
+                                <div>Self-service data analytics software that lets you create visually appealing data visualizations and insightful dashboards in minutes.</div>
+                            </div>
+                            <div className='props'>
+                                <div className='prop'>
+                                    <div className='prop-icon'>
+                                        <img src="/assets/svg/file.svg" alt="" />
+                                    </div>
+                                    <div className='prop-details'>
+                                        <h4>Powerful dashboard</h4>
+                                        <div>Combine multiple reports into a single beautiful dashboard.</div>
+                                    </div>
+                                </div>
+                                <div className='prop'>
+                                    <div className='prop-icon'>
+                                        <img src="/assets/svg/sync.svg" alt="" />
+                                    </div>
+                                    <div className='prop-details'>
+                                        <h4>Always in Sync</h4>
+                                        <div>Don’t worry about the data, always be synchronized</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </>
     );
