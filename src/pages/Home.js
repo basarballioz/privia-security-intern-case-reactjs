@@ -208,7 +208,30 @@ function Home() {
                 </section>
                 <section id="sponsors">
                     <div className="container">
-                            <div className='sponsor-desc'></div>
+                        <div className='sponsor-desc'>
+                            <h4>More than 1.8 million people across 50,000 companies choose Oval</h4>
+                        </div>
+
+                        <div className="sponsors">
+                            <div className="sponsor">
+                                <img src="/assets/svg/slack.svg" alt="ffsd" />
+                            </div>
+                            <div className="sponsor">
+                                <img src="/assets/svg/hubspot.svg" alt="ffsd" />
+                            </div>
+                            <div className="sponsor">
+                                <img src="/assets/svg/square.svg" alt="ffsd" />
+                            </div>
+                            <div className="sponsor">
+                                <img src="/assets/svg/servicetitan.svg" alt="ffsd" />
+                            </div>
+                            <div className="sponsor">
+                                <img src="/assets/svg/cogniant.svg" alt="ffsd" />
+                            </div>
+                            <div className="sponsor">
+                                <img src="/assets/svg/grubhub.svg" alt="ffsd" />
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>

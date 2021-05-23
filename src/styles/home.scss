@@ -377,7 +377,6 @@
 }
 
 #collab {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -521,6 +520,49 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+#sponsors {
+  border: 1px solid black;
+
+  .sponsor-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+    h4 {
+      width: 676px;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.3px;
+      color: #64626A;
+    }
+  }
+
+  .sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+    .sponsor {
+      border: 1px solid black;
+      width: 16.6%;
+
+      @media only screen and (max-width: 900px) {
+        width: 50%;
+      }
+
+      img {
+        @media only screen and (max-width: 1500px) {
+          width: 7rem;
         }
       }
     }
