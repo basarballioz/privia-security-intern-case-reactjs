@@ -533,7 +533,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 
     h4 {
       width: 676px;
@@ -542,6 +541,12 @@
       text-align: center;
       letter-spacing: 0.3px;
       color: #64626A;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
   }
 
@@ -553,18 +558,48 @@
     margin-top: 2rem;
 
     .sponsor {
-      border: 1px solid black;
       width: 16.6%;
 
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 768px) {
         width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: .3rem 0;
       }
 
       img {
         @media only screen and (max-width: 1500px) {
           width: 7rem;
         }
+
+        @media only screen and (max-width: 500px) {
+          width: 4rem;
+        }
       }
+    }
+  }
+
+  .testimonals {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .testimonal {
+      border: 1px solid black;
+      width: 300px;
+      padding: 1.5rem 2.5rem;
+      .shopify {
+      }
+
+      img {
+        width: 100px;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
     }
   }
 }
