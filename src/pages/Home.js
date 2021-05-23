@@ -31,7 +31,46 @@ function Home() {
             desc: 'Create reports with an easy to use drag-and-drop designer.',
             href: '/'
         }
-    ])
+    ]);
+
+    const [moreFeatures, setMoreFeatures] = useState([
+        {
+            iconbg: '/assets/svg/bluebg.svg',
+            title: 'Easy customization',
+            desc: 'No matter what kind of home you have to share, you can increase your earnings.',
+            href: '/'
+        },
+        {
+            iconbg: '/assets/svg/bluebg.svg',
+            title: 'Secure and fast',
+            desc: 'No matter what kind of home you have to share, you can increase your earnings.',
+            href: '/'
+        },
+        {
+            iconbg: '/assets/svg/bluebg.svg',
+            title: 'Powerful dashboard',
+            desc: 'No matter what kind of home you have to share, you can increase your earnings.',
+            href: '/'
+        },
+        {
+            iconbg: '/assets/svg/yellowbg.svg',
+            title: 'Cloud upload',
+            desc: 'No matter what kind of home you have to share, you can increase your earnings.',
+            href: '/'
+        },
+        {
+            iconbg: '/assets/svg/yellowbg.svg',
+            title: 'Proven Technology',
+            desc: 'No matter what kind of home you have to share, you can increase your earnings.',
+            href: '/'
+        },
+        {
+            iconbg: '/assets/svg/yellowbg.svg',
+            title: '98.99% satisfaction',
+            desc: 'No matter what kind of home you have to share, you can increase your earnings.',
+            href: '/'
+        },
+    ]);
 
     return (
         <>
@@ -62,8 +101,8 @@ function Home() {
                             {
                                 features.map((feature, index) => {
                                     return (
-                                        <Feature feature={feature} key={index} />
-                                    )
+                                        <Feature more={false} feature={feature} key={index} />
+                                    );
                                 })
                             }
                         </div>
@@ -106,11 +145,47 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                <section id='more-features'>
+                    <div className="container">
+                        <div className='section-title'>
+                            <img src="/assets/svg/tire.svg" alt="More Features Dash" />
+                            <span>More Features</span>
+                        </div>
+                        <div className="more-features-title">
+                            <h2>We're more than an analytic tool. Explore our features, and satisfy your customers</h2>
+                        </div>
+                        <div className='more-features'>
+                            {
+                                moreFeatures.map((moreFeature, index) => {
+                                    return (
+                                        <Feature more feature={moreFeature} key={index} />
+                                    );
+                                })
+                            }
+                        </div>
+                    </div>
+                </section>
+                {/* <section id='collab'>
+                    <div className="container">
+                        <div className='collab-image'>
+                            <img src="/assets/svg/people.svg" alt="Collaborate Image" />
+                        </div>
+                        <div className='collab-detail'>
+                            <div className='section-title'>
+                                <img src="/assets/svg/tire.svg" alt="Analytics Dash" />
+                                <span>Collaborate</span>
+                            </div>
+                            <div className='title'>
+                                <h2>Collaborate with your team anytime, anywhere</h2>
+                                <div>Self-service data analytics software that lets you create visually appealing data visualizations and insightful dashboards in minutes.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
             </main>
         </>
     );
 }
 
 export default Home;
-
 
