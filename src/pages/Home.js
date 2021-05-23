@@ -17,6 +17,11 @@ function Home() {
                         <img src="/assets/svg/dashboard.svg" alt="Privia Dashboard Image" />
                     </div>
                 </section>
+                <section id='features'>
+                    <div className='container'>
+                        
+                    </div>
+                </section>
             </main>
         </>
     );

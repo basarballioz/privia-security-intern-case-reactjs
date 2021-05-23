@@ -8,11 +8,21 @@
     margin-top: 180px;
   }
   .home-background {
-    position: absolute;
+    position: fixed;
     width: 100%;
+    height: 100vh;
     left: 0;
-    top: -200px;
+    top: 0px;
     z-index: -1;
+    object-fit: cover;
+    @media only screen and (max-width: 1300px) {
+    }
+    @media only screen and (max-width: 1100px) {
+    }
+    @media only screen and (max-width: 768px) {
+    }
+    @media only screen and (max-width: 320px) {
+    }
   }
 
   h1 {
@@ -23,6 +33,18 @@
     line-height: 72px;
     letter-spacing: 1px;
     width: 784px;
+    @media only screen and (max-width: 1100px) {
+      font-size: 46px;
+      width: 563px;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 34px;
+      width: 90%;
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 46px;
+      letter-spacing: 0.59px;
+    }
   }
 
   p {
@@ -35,12 +57,25 @@
     text-align: center;
     margin: 2rem 0rem 4rem 0rem;
     opacity: 0.8;
+    @media only screen and (max-width: 1100px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 550px;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 80%;
+    }
   }
 
   .trial-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+      width: 90%;
+    }
 
     button {
       border: none;
@@ -56,6 +91,10 @@
       letter-spacing: 0.2px;
       border-radius: 8px;
       font-weight: 700;
+      @media only screen and (max-width: 500px) {
+        margin: 0.5rem 0rem;
+        width: 100%;
+      }
     }
 
     .primary {
@@ -66,5 +105,11 @@
   }
   .dashboard {
     margin-top: 6rem;
+    @media only screen and (max-width: 1100px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
   }
 }
