@@ -206,6 +206,11 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                <section id="sponsors">
+                    <div className="container">
+                            <div className='sponsor-desc'></div>
+                    </div>
+                </section>
             </main>
         </>
     );
