@@ -239,12 +239,15 @@ function Home() {
                                 <span className='testimonal-text'>I received great customer service from the specialists who helped me. I would recommend to anyone who wants great dashboard that has great quality.</span>
                                 <img src="/assets/svg/people1.svg" alt="Testimonal Image" />
                                 <span className='testimonal-name'>Harold Tyler</span>
+                                <span className='testimonal-job'>Product Designer</span>
+
                             </div>
                             <div className="testimonal">
                                 <img src="/assets/svg/airbnb.svg" alt="ffsd" />
                                 <span className='testimonal-text'>My experience with this platform so far has been great. Everything is easy, from creating visualization, scheduling, collaboration and many more.</span>
                                 <img src="/assets/svg/people2.svg" alt="ffsd" />
                                 <span className='testimonal-name'>Ryan Holmes</span>
+                                <span className='testimonal-job'>Motion design / animator</span>
                             </div>
                         </div>
                         <div className='all-testimonal'>

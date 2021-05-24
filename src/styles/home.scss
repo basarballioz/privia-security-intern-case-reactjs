@@ -581,15 +581,17 @@
   }
 
   .testimonals {
-    border: 1px solid black;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 2rem;
 
     .testimonal {
-      border: 1px solid black;
-      width: 300px;
+      border: 1px solid rgb(163, 163, 163);
+      width: 400px;
+      height: 300px;
       padding: 1.5rem 2.5rem;
+      border-radius: 15px;
       .shopify {
       }
 
