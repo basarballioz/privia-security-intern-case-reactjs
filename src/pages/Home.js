@@ -1,7 +1,54 @@
-import React, { useState } from 'react'
-import Feature from '../components/Feature'
+import React, { useState, useEffect } from 'react'
+import Feature from '../components/Feature';
+import Plan from '../components/Plan';
 
 function Home() {
+
+    const [activePlan, setActivePlan] = useState(0);
+
+    const [plans, setPlans] = useState([
+        {
+            price: 22,
+            priceColor: '#EDB300',
+            color: 'black',
+            desc: 'All the basics for businesses that are just getting started.',
+            type: 'Standart',
+            bg: 'standart-bg',
+            features: [
+                { desc: 'Single project use' },
+                { desc: 'Basic dashboard' },
+                { desc: 'All components included' }
+            ]
+        },
+        {
+            price: 99,
+            priceColor: '#49A4FF',
+            color: 'black',
+            desc: 'Better for growing businesses that want more customers.',
+            type: 'Essential',
+            bg: 'essentials-bg',
+            features: [
+                { desc: 'Unlimited project use' },
+                { desc: 'Advanced dashboard' },
+                { desc: 'All components included' },
+                { desc: 'Advanced insight' },
+            ]
+        },
+        {
+            price: 139,
+            priceColor: 'white',
+            color: 'white',
+            desc: 'All the basics for businesses that are just getting started.',
+            type: 'Premium',
+            bg: 'premium-bg',
+            features: [
+                { desc: 'Unlimited project use' },
+                { desc: 'Advanced dashboard' },
+                { desc: 'All components included' },
+                { desc: 'Advanced insight' },
+            ]
+        }
+    ]);
 
     const [features, setFeatures] = useState([
         {
@@ -72,7 +119,15 @@ function Home() {
         },
     ]);
 
+
+
+    useEffect(() => {
+        console.log(activePlan);
+        return () => { };
+    }, []);
+
     return (
+
         <>
             <main>
                 <section id="introduction">
@@ -273,122 +328,41 @@ function Home() {
                         <div className="plans-title-area">
                             <h2>Choose the plan that's right for your business</h2>
                         </div>
-                        
+
                         <div className="plans-desc-area">30-day free trial, cancel any time. No credit card required.</div>
                         <div className="plans-bill-area">
                             <div className="plans-bill-monthly">
                                 <span>Bill monthly</span>
-                                <span>sdfsfdfsd</span>  
-                            </div>
-                            <div className="plans-bill-anually">
+                                <div className='switcher'>
+                                    <img src="/assets/svg/switcher.svg" alt="Switcher" />
+                                </div>
                                 <span>Bill anually</span>
-                                <span>sdfsfdfsd</span>
+                                <div className='save-price'>
+                                    <img src="/assets/svg/cizgi.svg" alt="Line SVG" />
+                                </div>
                             </div>
                         </div>
 
+                        <div className="plans-choose-area">
+                            <div onClick={() => setActivePlan(0)} className="plans-choose-standart">Standart</div>
+                            <div onClick={() => setActivePlan(1)} className="plans-choose-essentials">Essentials</div>
+                            <div onClick={() => setActivePlan(2)} className="plans-choose-premium">Premium</div>
+                        </div>
+
                         <div className="plans-options-area">
-                            <div className="plans-option">
-                                <div className="plans-option-title">
-                                    <h2>$23</h2>
-                                    <div>/mont</div>
-                                </div>
-                                <div className="plans-option-type"> Standart </div>
-                                <div className="plans-option-desc">
-                                    All the basics for business that are just getting started.
-                                </div>
-                                <hr></hr>
-                                <ul>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                </ul>
-                                <button className="plans-option-start-button">fdsfsdfd</button>
-                            </div>
-                            <div className="plans-option">
-                                <div className="plans-option-title">
-                                    <h2>$23</h2>
-                                    <div>/mont</div>
-                                </div>
-                                <div className="plans-option-type"> Standart </div>
-                                <div className="plans-option-desc">
-                                    All the basics for business that are just getting started.
-                                </div>
-                                <hr></hr>
-                                <ul>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                </ul>
-                                <button className="plans-option-start-button">fdsfsdfd</button>
-                            </div>
-                            <div className="plans-option">
-                                <div className="plans-option-title">
-                                    <h2>$23</h2>
-                                    <div>/mont</div>
-                                </div>
-                                <div className="plans-option-type"> Standart </div>
-                                <div className="plans-option-desc">
-                                    All the basics for business that are just getting started.
-                                </div>
-                                <hr></hr>
-                                <ul>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
-                                        <span>
-                                            Single Project use.
-                                        </span>
-                                    </li>
-                                </ul>
-                                <button className="plans-option-start-button">fdsfsdfd</button>
-                            </div>
+                            {
+                                plans.map((plan, index) => {
+                                    let active = false;
+                                    if (index === activePlan) {
+                                        active = true;
+                                    } else {
+                                        active = false;
+                                    }
+                                    return (
+                                        <Plan active={active} data={plan} key={index} />
+                                    );
+                                })
+                            }
                         </div>
                     </div>
                 </section>

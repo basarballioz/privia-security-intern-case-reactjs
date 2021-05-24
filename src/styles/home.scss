@@ -757,24 +757,61 @@
 }
 
 #plans {
-  border: 1px solid black;
   .container {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     .plans-title-area {
-      border: 1px solid black;
-      width: 45%;
+      width: 60%;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 58px;
+      text-align: center;
+      letter-spacing: 0.8px;
+      color: #000000;
+      @media only screen and (max-width: 1100px) {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #000000;
+      }
+      @media only screen and (max-width: 768px) {
+        width: 90%;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.375px;
+      }
+
       h2 {
         text-align: center;
       }
     }
 
     .plans-desc-area {
-      margin-top: .7rem;
+      margin-top: 1.5rem;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.3px;
+      color: #3b3a40;
+      @media only screen and (max-width: 1100px) {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.24px;
+        color: #3b3a40;
+      }
+      @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #3b3a40;
+      }
     }
 
     .plans-bill-area {
@@ -783,84 +820,165 @@
       justify-content: center;
       align-items: center;
 
+      .plans-bill-monthly {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .switcher {
+        margin: 0 1rem;
+      }
+
+      .save-price {
+        margin: 0 0.5rem;
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+
       span {
-        margin: 0 .2rem;
+        margin: 0 0.2rem;
+      }
+    }
+
+    .plans-choose-area {
+      color: blue;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      display: none;
+
+      @media only screen and (max-width: 768px) {
+        display: flex;
+      }
+
+      div {
+        color: blue;
+        padding: 0.5rem 0rem;
+        cursor: pointer;
       }
     }
 
     .plans-options-area {
-      border: 1px solid black;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
       width: 100%;
-      margin-top: 2rem;
-      
+
+      @media only screen and (max-width: 768px) {
+        display: flex;
+      }
+
       .plans-option {
-        border: 3px solid black;
-        padding: .8rem;
-        margin: .5rem;
-        border-radius: 10px;
+        background-color: #ffedb6;
         width: 358px;
-        background-color: yellow;
+        padding: 1rem;
+        margin: 0.5rem;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
 
-        .plans-option-title {
-          display: flex;
-          align-items: center;
-
-          h2 {
-            margin-right: .5rem;
-            font-size: 2rem;
-            color: rgba($color: #b89023, $alpha: 1.0)
-          }
-
-          div {
-
-          }
+        @media only screen and (max-width: 768px) {
+          display: none;
+          margin: 0rem;
         }
 
-        .plans-option-type {
-          margin-top: 1rem;
-          font-weight: bold;
-        }
-
-        .plans-option-desc {
-          width: 70%;
-          border: 1px solid black;
-          margin-top: .3rem;
-        }
-
-        hr {
-          margin: 1rem 0;
-        }
-
-        ul {
-          border: 1px solid black;
-          li {
-            border: 1px solid black;
+        .plans-option-content {
+          .plans-option-title {
             display: flex;
-            justify-content: flex-start;
             align-items: center;
-            margin: .5rem 0rem;
 
-            img {
-              margin-right: .4rem;
+            h2 {
+              margin-right: 0.7rem;
+              font-size: 2rem;
+              color: rgba($color: #b89023, $alpha: 1);
+
+              @media only screen and (max-width: 768px) {
+                font-size: 38px;
+                line-height: 46px;
+                letter-spacing: 0.633333px;
+              }
+            }
+
+            div {
+              font-size: 14px;
+              line-height: 24px;
+              letter-spacing: 0.175px;
+            }
+          }
+
+          .plans-option-type {
+            margin-top: 1rem;
+            font-weight: bold;
+          }
+
+          .plans-option-desc {
+            width: 70%;
+            margin-top: 0.3rem;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.175px;
+            opacity: 0.72;
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
+          }
+
+          hr {
+            margin: 1.4rem 0;
+          }
+
+          ul {
+            li {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin: 0.7rem 0rem;
+              font-size: 16px;
+              line-height: 26px;
+              letter-spacing: 0.2px;
+
+              img {
+                margin-right: 0.4rem;
+              }
             }
           }
         }
 
         .plans-option-start-button {
-          margin-top: 4rem;
+          margin-top: 2rem;
           width: 100%;
           border: none;
           outline: none;
-          padding: .8rem;
-          border-radius: 5px;
+          padding: 0.8rem;
+          border-radius: 8px;
           background-color: white;
         }
+      }
 
+      .plans-option.active {
+        @media only screen and (max-width: 768px) {
+          display: flex;
+        }
+      }
+
+      .plans-option.standart-bg {
+        background-color: #ffedb6;
+      }
+
+      .plans-option.essentials-bg {
+        background-color: #d1e8ff;
+      }
+
+      .plans-option.premium-bg {
+        background-color: #1e5579;
       }
     }
-    
   }
 }
