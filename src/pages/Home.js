@@ -111,7 +111,7 @@ function Home() {
                 <section id='analytics'>
                     <div className='container'>
                         <div className='analytics-image'>
-                            <img src="/assets/svg/altdashboard.svg" alt="" />
+                            <img src="/assets/svg/altdashboard.svg" alt="Alt Dashboard" />
                         </div>
                         <div className='analytics-detail'>
                             <div className='section-title'>
@@ -125,7 +125,7 @@ function Home() {
                             <div className='props'>
                                 <div className='prop'>
                                     <div className='prop-icon'>
-                                        <img src="/assets/svg/file.svg" alt="" />
+                                        <img src="/assets/svg/file.svg" alt="File Icon" />
                                     </div>
                                     <div className='prop-details'>
                                         <h4>Powerful dashboard</h4>
@@ -134,7 +134,7 @@ function Home() {
                                 </div>
                                 <div className='prop'>
                                     <div className='prop-icon'>
-                                        <img src="/assets/svg/sync.svg" alt="" />
+                                        <img src="/assets/svg/sync.svg" alt="Sync Icon" />
                                     </div>
                                     <div className='prop-details'>
                                         <h4>Always in Sync</h4>
@@ -214,31 +214,31 @@ function Home() {
 
                         <div className="sponsors">
                             <div className="sponsor">
-                                <img src="/assets/svg/slack.svg" alt="ffsd" />
+                                <img src="/assets/svg/slack.svg" alt="Slack Icon" />
                             </div>
                             <div className="sponsor">
-                                <img src="/assets/svg/hubspot.svg" alt="ffsd" />
+                                <img src="/assets/svg/hubspot.svg" alt="Hubspot Icon" />
                             </div>
                             <div className="sponsor">
-                                <img src="/assets/svg/square.svg" alt="ffsd" />
+                                <img src="/assets/svg/square.svg" alt="Square Icon" />
                             </div>
                             <div className="sponsor">
-                                <img src="/assets/svg/servicetitan.svg" alt="ffsd" />
+                                <img src="/assets/svg/servicetitan.svg" alt="Servicetitan Icon" />
                             </div>
                             <div className="sponsor">
-                                <img src="/assets/svg/cogniant.svg" alt="ffsd" />
+                                <img src="/assets/svg/cogniant.svg" alt="Cogniant Icon" />
                             </div>
                             <div className="sponsor">
-                                <img src="/assets/svg/grubhub.svg" alt="ffsd" />
+                                <img src="/assets/svg/grubhub.svg" alt="Grubhub Icon" />
                             </div>
                         </div>
                         <div className='testimonals'>
 
                             <div className="testimonal">
-                                <img className="brand-img" src="/assets/svg/shopify.svg" alt="ffsd" />
+                                <img className="brand-img" src="/assets/svg/shopify.svg" alt="Shopify Icon" />
                                 <span className='testimonal-text'>I received great customer service from the specialists who helped me. I would recommend to anyone who wants great dashboard that has great quality.</span>
                                 <div className="testimonal-profile">
-                                    <img src="/assets/svg/people2.svg" alt="ffsd" />
+                                    <img src="/assets/svg/people2.svg" alt="Ryan Holmes Image" />
 
                                     <div className="testimonal-profile-info">
                                         <div className='testimonal-name'>Ryan Holmes</div>
@@ -248,11 +248,11 @@ function Home() {
 
                             </div>
                             <div className="testimonal">
-                                <img className="brand-img" src="/assets/svg/airbnb.svg" alt="ffsd" />
+                                <img className="brand-img" src="/assets/svg/airbnb.svg" alt="Airbnb Icon" />
                                 <span className='testimonal-text'>My experience with this platform so far has been great. Everything is easy, from creating visualization, scheduling, collaboration and many more.</span>
-                                
+
                                 <div className="testimonal-profile">
-                                    <img src="/assets/svg/people2.svg" alt="ffsd" />
+                                    <img src="/assets/svg/people2.svg" alt="Ryan Holmes Icon" />
 
                                     <div className="testimonal-profile-info">
                                         <div className='testimonal-name'>Ryan Holmes</div>
@@ -263,7 +263,7 @@ function Home() {
                         </div>
                         <div className='all-testimonals'>
                             <div>See All Testimonal</div>
-                            <img src="/assets/svg/next.svg" alt="ffsd" />
+                            <img src="/assets/svg/next.svg" alt="Next Icon" />
                         </div>
                     </div>
                 </section>
@@ -273,8 +273,53 @@ function Home() {
                         <div className="plans-title-area">
                             <h2>Choose the plan that's right for your business</h2>
                         </div>
+                        
                         <div className="plans-desc-area">30-day free trial, cancel any time. No credit card required.</div>
-                        <div className="plans-monthly-area">30-day free trial, cancel any time. No credit card required.</div>
+                        <div className="plans-bill-area">
+                            <div className="plans-bill-monthly">
+                                <span>Bill monthly</span>
+                                <span>sdfsfdfsd</span>  
+                            </div>
+                            <div className="plans-bill-anually">
+                                <span>Bill anually</span>
+                                <span>sdfsfdfsd</span>
+                            </div>
+                        </div>
+
+                        <div className="plans-options-area">
+                            <div className="plans-option">
+                                <div className="plans-option-title">
+                                    <h2>$23</h2>
+                                    <div>/mont</div>
+                                </div>
+                                <div className="plans-option-type"> Standart </div>
+                                <div className="plans-option-desc">
+                                    All the basics for business that are just getting started.
+                                </div>
+                                <hr></hr>
+                                <ul>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div className="plans-option-start-button"></div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
