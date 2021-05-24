@@ -317,7 +317,77 @@ function Home() {
                                         </span>
                                     </li>
                                 </ul>
-                                <div className="plans-option-start-button"></div>
+                                <button className="plans-option-start-button">fdsfsdfd</button>
+                            </div>
+                            <div className="plans-option">
+                                <div className="plans-option-title">
+                                    <h2>$23</h2>
+                                    <div>/mont</div>
+                                </div>
+                                <div className="plans-option-type"> Standart </div>
+                                <div className="plans-option-desc">
+                                    All the basics for business that are just getting started.
+                                </div>
+                                <hr></hr>
+                                <ul>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                </ul>
+                                <button className="plans-option-start-button">fdsfsdfd</button>
+                            </div>
+                            <div className="plans-option">
+                                <div className="plans-option-title">
+                                    <h2>$23</h2>
+                                    <div>/mont</div>
+                                </div>
+                                <div className="plans-option-type"> Standart </div>
+                                <div className="plans-option-desc">
+                                    All the basics for business that are just getting started.
+                                </div>
+                                <hr></hr>
+                                <ul>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/svg/check.svg" alt="Check Icon" />
+                                        <span>
+                                            Single Project use.
+                                        </span>
+                                    </li>
+                                </ul>
+                                <button className="plans-option-start-button">fdsfsdfd</button>
                             </div>
                         </div>
                     </div>

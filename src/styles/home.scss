@@ -790,16 +790,73 @@
 
     .plans-options-area {
       border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      width: 100%;
       margin-top: 2rem;
       
       .plans-option {
-        border: 1px solid black;
+        border: 3px solid black;
+        padding: .8rem;
         margin: .5rem;
         border-radius: 10px;
+        width: 358px;
+        background-color: yellow;
 
         .plans-option-title {
           display: flex;
           align-items: center;
+
+          h2 {
+            margin-right: .5rem;
+            font-size: 2rem;
+            color: rgba($color: #b89023, $alpha: 1.0)
+          }
+
+          div {
+
+          }
+        }
+
+        .plans-option-type {
+          margin-top: 1rem;
+          font-weight: bold;
+        }
+
+        .plans-option-desc {
+          width: 70%;
+          border: 1px solid black;
+          margin-top: .3rem;
+        }
+
+        hr {
+          margin: 1rem 0;
+        }
+
+        ul {
+          border: 1px solid black;
+          li {
+            border: 1px solid black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: .5rem 0rem;
+
+            img {
+              margin-right: .4rem;
+            }
+          }
+        }
+
+        .plans-option-start-button {
+          margin-top: 4rem;
+          width: 100%;
+          border: none;
+          outline: none;
+          padding: .8rem;
+          border-radius: 5px;
+          background-color: white;
         }
 
       }
