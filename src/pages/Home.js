@@ -235,24 +235,46 @@ function Home() {
                         <div className='testimonals'>
 
                             <div className="testimonal">
-                                <img className="shopify" src="/assets/svg/shopify.svg" alt="ffsd" />
+                                <img className="brand-img" src="/assets/svg/shopify.svg" alt="ffsd" />
                                 <span className='testimonal-text'>I received great customer service from the specialists who helped me. I would recommend to anyone who wants great dashboard that has great quality.</span>
-                                <img src="/assets/svg/people1.svg" alt="Testimonal Image" />
-                                <span className='testimonal-name'>Harold Tyler</span>
-                                <span className='testimonal-job'>Product Designer</span>
+                                <div className="testimonal-profile">
+                                    <img src="/assets/svg/people2.svg" alt="ffsd" />
+
+                                    <div className="testimonal-profile-info">
+                                        <div className='testimonal-name'>Ryan Holmes</div>
+                                        <div className='testimonal-job'>Motion design / animator</div>
+                                    </div>
+                                </div>
 
                             </div>
                             <div className="testimonal">
-                                <img src="/assets/svg/airbnb.svg" alt="ffsd" />
+                                <img className="brand-img" src="/assets/svg/airbnb.svg" alt="ffsd" />
                                 <span className='testimonal-text'>My experience with this platform so far has been great. Everything is easy, from creating visualization, scheduling, collaboration and many more.</span>
-                                <img src="/assets/svg/people2.svg" alt="ffsd" />
-                                <span className='testimonal-name'>Ryan Holmes</span>
-                                <span className='testimonal-job'>Motion design / animator</span>
+                                
+                                <div className="testimonal-profile">
+                                    <img src="/assets/svg/people2.svg" alt="ffsd" />
+
+                                    <div className="testimonal-profile-info">
+                                        <div className='testimonal-name'>Ryan Holmes</div>
+                                        <div className='testimonal-job'>Motion design / animator</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className='all-testimonal'>
-                            See All Testimonal <img src="/assets/svg/next.svg" alt="ffsd" />
+                        <div className='all-testimonals'>
+                            <div>See All Testimonal</div>
+                            <img src="/assets/svg/next.svg" alt="ffsd" />
                         </div>
+                    </div>
+                </section>
+
+                <section id="plans">
+                    <div className="container">
+                        <div className="plans-title-area">
+                            <h2>Choose the plan that's right for your business</h2>
+                        </div>
+                        <div className="plans-desc-area">30-day free trial, cancel any time. No credit card required.</div>
+                        <div className="plans-monthly-area">30-day free trial, cancel any time. No credit card required.</div>
                     </div>
                 </section>
             </main>

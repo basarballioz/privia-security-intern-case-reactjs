@@ -405,7 +405,6 @@
       }
 
       img {
-
         @media only screen and (max-width: 768px) {
           width: 100%;
         }
@@ -422,7 +421,6 @@
       }
 
       .section-title {
-        
       }
 
       .title {
@@ -490,14 +488,13 @@
           }
 
           @media only screen and (max-width: 768px) {
-
           }
           li {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             width: 50%;
-            margin-top: .5rem;
+            margin-top: 0.5rem;
 
             @media only screen and (max-width: 1100px) {
               width: 33%;
@@ -511,7 +508,7 @@
             }
 
             img {
-              margin-right: .5rem;
+              margin-right: 0.5rem;
             }
 
             div {
@@ -527,81 +524,241 @@
 }
 
 #sponsors {
-  border: 1px solid black;
-
-  .sponsor-desc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h4 {
-      width: 676px;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: center;
-      letter-spacing: 0.3px;
-      color: #64626A;
-
-      @media only screen and (max-width: 768px) {
-        width: 100%;
-        font-size: 14px;
-        line-height: 18px;
-      }
-    }
-  }
-
-  .sponsors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-
-    .sponsor {
-      width: 16.6%;
-
-      @media only screen and (max-width: 768px) {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: .3rem 0;
-      }
-
-      img {
-        @media only screen and (max-width: 1500px) {
-          width: 7rem;
-        }
-
-        @media only screen and (max-width: 500px) {
-          width: 4rem;
-        }
-      }
-    }
-  }
-
-  .testimonals {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-
-    .testimonal {
-      border: 1px solid rgb(163, 163, 163);
-      width: 400px;
-      height: 300px;
-      padding: 1.5rem 2.5rem;
-      border-radius: 15px;
-      .shopify {
-      }
-
-      img {
-        width: 100px;
-      }
+  .container {
+    transition: all 0.2s ease-out;
+    .sponsor-desc {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
+      align-items: center;
+      transition: all 0.2s ease-out;
+
+      h4 {
+        width: 676px;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #64626a;
+        transition: all 0.2s ease-out;
+
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
     }
+
+    .sponsors {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      transition: all 0.2s ease-out;
+
+      .sponsor {
+        width: 16.6%;
+        transition: all 0.2s ease-out;
+
+        @media only screen and (max-width: 768px) {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0.3rem 0;
+        }
+
+        img {
+          @media only screen and (max-width: 1500px) {
+            width: 7rem;
+          }
+
+          @media only screen and (max-width: 500px) {
+            width: 5rem;
+          }
+        }
+      }
+    }
+
+    .testimonals {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      margin-top: 2rem;
+      transition: all 0.2s ease-out;
+
+      @media only screen and (max-width: 1100px) {
+        justify-content: space-between;
+      }
+
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .testimonal {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        border: 1px solid rgb(163, 163, 163);
+        width: 50%;
+        padding: 1.5rem 2.5rem;
+        border-radius: 15px;
+        transition: all 0.2s ease-out;
+
+        @media only screen and (max-width: 1100px) {
+          width: 49%;
+          padding: 1.2rem 2.2rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          padding: 1rem 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        .brand-img {
+          height: 50px;
+          transition: all 0.2s ease-out;
+
+          @media only screen and (max-width: 1100px) {
+            height: 29px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            height: 29px;
+          }
+        }
+
+        .testimonal-text {
+          margin-top: 1.2rem;
+          font-size: 24px;
+          line-height: 34px;
+          letter-spacing: 0.4px;
+          color: #000000;
+          width: 90%;
+          transition: all 0.2s ease-out;
+          @media only screen and (max-width: 1100px) {
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.233333px;
+            color: #000000;
+          }
+
+          @media only screen and (max-width: 768px) {
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.233333px;
+            color: #000000;
+            width: 100%;
+          }
+        }
+
+        .testimonal-profile {
+          margin-top: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.2s ease-out;
+
+          img {
+            margin-right: 0.5rem;
+            width: 48px;
+            transition: all 0.2s ease-out;
+
+            @media only screen and (max-width: 1100px) {
+              width: 42px;
+            }
+
+            @media only screen and (max-width: 768px) {
+              width: 36px;
+            }
+          }
+
+          .testimonal-profile-info {
+            .testimonal-job {
+              margin-top: 0.5rem;
+              font-size: 14px;
+              line-height: 17px;
+              letter-spacing: 0.2px;
+              color: #8e8c95;
+              transition: all 0.2s ease-out;
+              @media only screen and (max-width: 1100px) {
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.2px;
+                color: #8e8c95;
+              }
+
+              @media only screen and (max-width: 768px) {
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.171429px;
+                color: #8e8c95;
+              }
+            }
+            .testimonal-name {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 22px;
+              letter-spacing: 0.3px;
+              color: #3b3a40;
+              transition: all 0.2s ease-out;
+              @media only screen and (max-width: 1100px) {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.266667px;
+                color: #3b3a40;
+              }
+
+              @media only screen and (max-width: 768px) {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.233333px;
+                color: #3b3a40;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .all-testimonals {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      transition: all 0.2s ease-out;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: right;
+      color: #1e5579;
+      cursor: pointer;
+      margin-top: 2rem;
+
+      @media only screen and (max-width: 1100px) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        color: #1e5579;
+      }
+
+      div {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+#plans {
+  border: 1px solid black;
+  .container {
+    border: 1px solid black;
   }
 }
