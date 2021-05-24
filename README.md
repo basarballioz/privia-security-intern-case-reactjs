@@ -1,7 +1,10 @@
-# Privia
+# Privia Secuirty Staj Projesi
 ------
 
 The project was created with React-SCSS using certain assets from Figma. This web project works sensitively on tablets, phones and similar devices.
+
+![Privia Secuirty Staj Projesi](https://cdn.discordapp.com/attachments/818769701520801815/846458842652737547/unknown.png)
+
 
 ## First of all, let's install the necessary packages
 ```
